@@ -1,0 +1,33 @@
+@import 'src/theme.scss';
+
+mat-sidenav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+mat-sidenav-container > mat-sidenav {
+    background-color: mat-color($primary, 800);
+    color: mat-color($primary, 100);
+    min-width: 144px;
+}
+
+mat-list-item {
+    color: white !important;
+}
+
+mat-sidenav-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+mat-toolbar {
+    flex: 0 0 auto;
+}
+
+.content {
+    flex: 1 1 100%;
+}

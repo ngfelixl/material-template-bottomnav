@@ -1,4 +1,14 @@
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
-<app-navbar></app-navbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="over" #sidenav>
+    <mat-nav-list>
+      <mat-list-item>Hi</mat-list-item>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-navbar (sidenav)="sidenav.toggle()"></app-navbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
